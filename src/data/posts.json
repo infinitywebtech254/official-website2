@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Government launches new policy reforms",
+    "category": "Politics",
+    "image": "https://images.unsplash.com/photo-1525186402429-b4ff38bedbec?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "The Kenyan government has introduced reforms aimed at improving public service delivery.",
+    "content": "Full story here — covering details about the policy changes, leadership reactions, and what this means for citizens."
+  },
+  {
+    "title": "AFC Leopards clinch the cup in thrilling final",
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "Fans celebrate as Leopards take home the national trophy.",
+    "content": "In an electrifying match, AFC Leopards triumphed 3–2 over Gor Mahia, marking a historic victory for the team."
+  },
+  {
+    "title": "Kenyan startups see growth in 2025",
+    "category": "Business",
+    "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "Startups in Kenya’s fintech and agri-tech sectors report massive growth.",
+    "content": "The innovation scene in Kenya continues to thrive with new funding rounds and tech hubs expanding across the country."
+  },
+  {
+    "title": "Tech innovators shaping the digital future",
+    "category": "Technology",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "Local developers are breaking new ground in mobile app development.",
+    "content": "With global partnerships and mentorship programs, Kenyan innovators are leading digital transformation."
+  },
+  {
+    "title": "Top Kenyan artists making global headlines",
+    "category": "Entertainment",
+    "image": "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "Music and film stars are taking Kenya to the world stage.",
+    "content": "Several artists have recently signed international deals, further boosting the creative economy."
+  },
+  {
+    "title": "Healthy living tips for busy Nairobians",
+    "category": "Lifestyle",
+    "image": "https://images.unsplash.com/photo-1494599948593-3dafe8338d71?auto=format&fit=crop&w=800&q=60",
+    "excerpt": "Simple ways to stay fit and healthy in the city.",
+    "content": "Nutritionists and trainers share their best hacks for keeping wellness routines in busy urban life."
+  }
+]
