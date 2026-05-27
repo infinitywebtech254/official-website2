@@ -4,21 +4,28 @@ import posts from "./data/posts.json"; // ← import the JSON file
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
-      {/* Header */}
-      <header className="bg-red-600 text-white p-5 flex justify-between items-center shadow-md">
-        <div className="flex items-center gap-3">
+      {/* FIXED RESPONSIVE HEADER */}
+      <header className="bg-red-600 text-white p-4 flex justify-between items-center shadow-md w-full">
+        {/* Left Side: Logo & Text forced into one line */}
+        <div className="flex items-center gap-2 shrink-0">
           <img
             src="/zetu-logo.jpg"
             alt="Zetu Times Logo"
-            className="w-12 h-12 object-contain"
+            className="w-8 h-8 sm:w-12 sm:h-12 object-contain shrink-0"
           />
-          <h1 className="text-3xl font-bold tracking-wide">Zetu Times</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-wide whitespace-nowrap m-0">
+            Zetu Times
+          </h1>
         </div>
-        <input
-          type="text"
-          placeholder="Search..."
-          className="p-2 rounded-md text-black w-60 focus:outline-none focus:ring-2 focus:ring-gray-400"
-        />
+        
+        {/* Right Side: Responsive Search Bar forced to the far right */}
+        <div className="flex items-center justify-end pl-2">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="p-1.5 sm:p-2 rounded-md text-black w-28 sm:w-44 md:w-60 text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+          />
+        </div>
       </header>
 
       {/* Navigation */}
