@@ -4,8 +4,8 @@ import posts from "./data/posts.json"; // ← import the JSON file
 function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
-      {/* FIXED RESPONSIVE HEADER */}
-      <header className="bg-red-600 text-white p-4 flex justify-between items-center shadow-md w-full">
+      {/* FIXED, RESPONSIVE, AND STICKY HEADER */}
+      <header className="sticky top-0 z-50 bg-red-600 text-white p-4 flex justify-between items-center shadow-md w-full">
         {/* Left Side: Logo & Text forced into one line */}
         <div className="flex items-center gap-2 shrink-0">
           <img
@@ -30,117 +30,79 @@ function App() {
 
       {/* Navigation */}
       <nav className="bg-gray-100 p-4 flex flex-wrap justify-center gap-3 border-b">
-        <a
-          href="/politics"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition"
-        >
-          Politics
-        </a>
-        <a
-          href="/sports"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition"
-        >
-          Sports
-        </a>
-        <a
-          href="/business"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition"
-        >
-          Business
-        </a>
-        <a
-          href="/technology"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition"
-        >
-          Technology
-        </a>
-        <a
-          href="/entertainment"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition"
-        >
-          Entertainment
-        </a>
-        <a
-          href="/lifestyle"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition"
-        >
-          Lifestyle
-        </a>
+        <a href="/politics" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Politics</a>
+        <a href="/sports" className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">Sports</a>
+        <a href="/business" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Business</a>
+        <a href="/technology" className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">Technology</a>
+        <a href="/entertainment" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">Entertainment</a>
+        <a href="/lifestyle" className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">Lifestyle</a>
       </nav>
 
       {/* Main Content */}
       <main className="p-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
         {[
           {
-            title: "Government launches new policy reforms",
+            title: "Parliament Debates Key National Development Bills",
             category: "Politics",
-            image:
-              "https://images.unsplash.com/photo-1525186402429-b4ff38bedbec?auto=format&fit=crop&w=800&q=60",
+            description: "Lawmakers gather in Newyork to evaluate new regulatory policies aimed at economic reforms.",
+            // FIXED: Using a reliable Unsplash link that represents a clean government/politics house architecture
+            image: "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=60",
           },
           {
-            title: "AFC Leopards clinch the cup in thrilling final",
+            title: "AFC Leopards Clinch The Cup In Thrilling Football Final",
             category: "Sports",
-            image:
-              "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=60",
+            description: "The stadium erupted in celebration as the team claimed a spectacular victory in front of thousands of fans.",
+            image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=60",
           },
           {
-            title: "Kenyan startups see growth in 2025",
+            title: "Nairobi Tech Hubs Witness Historic Investment Growth",
             category: "Business",
-            image:
-              "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=60",
+            description: "Local Kenyan tech startups continue to break financial records, drawing major global investments.",
+            image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=60",
           },
           {
-            title: "Tech innovators shaping the digital future",
+            title: "Digital Innovators Reshaping East Africa's Future",
             category: "Technology",
-            image:
-              "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=60",
+            description: "How software developers and engineers are constructing micro-banking systems for remote communities.",
+            image: "https://images.unsplash.com/photo-1494599948593-3dafe8338d71?auto=format&fit=crop&w=800&q=60",
           },
           {
-            title: "Top Kenyan artists making global headlines",
+            title: "Top Kenyan Musical Artists Making Global Waves",
             category: "Entertainment",
-            image:
-              "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?auto=format&fit=crop&w=800&q=60",
+            description: "From live stages to global charts, creative visionaries are elevating the authentic Kenyan sound internationally.",
+            image: "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?auto=format&fit=crop&w=800&q=60",
           },
           {
-            title: "Healthy living tips for busy Nairobians",
+            title: "Essential Healthy Living Strategies For Busy Nairobians",
             category: "Lifestyle",
-            image:
-              "https://images.unsplash.com/photo-1494599948593-3dafe8338d71?auto=format&fit=crop&w=800&q=60",
+            description: "Discover realistic meal prep ideas and workout routines tailored around a hectic city schedule.",
+            image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=60",
           },
         ].map((article, index) => (
           <div
             key={index}
-            className="border rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+            className="border rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col justify-between"
           >
-            <img
-              src={article.image}
-              alt={article.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <span className="text-sm text-gray-500">{article.category}</span>
-              <h2 className="text-xl font-semibold mt-2">{article.title}</h2>
-              <p className="mt-2 text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eget ligula eu lectus lobortis condimentum.
-              </p>
+            <div>
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <span className="text-sm font-semibold text-red-600 uppercase tracking-wider">{article.category}</span>
+                <h2 className="text-xl font-bold mt-2 leading-tight">{article.title}</h2>
+                <p className="mt-2 text-gray-600 text-sm">
+                  {article.description}
+                </p>
+              </div>
+            </div>
+            <div className="p-4 pt-0">
               <a
                 href={`/${article.category.toLowerCase()}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 text-red-600 hover:underline"
+                className="inline-block text-red-600 hover:underline font-medium"
               >
                 Read more →
               </a>
